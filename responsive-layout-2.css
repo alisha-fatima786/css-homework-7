@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 20px auto;
+    max-width: 1200px;
+    color: white;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    gap: 10px;
+}
+
+.logo {
+    width: 20%;
+    background-color: #930417;
+    height: 50px;
+}
+
+.menu {
+    width: 80%;
+    background-color: #cc3333;
+    height: 50px;
+}
+
+main {
+    display: flex;
+    gap: 10px;
+}
+
+.left {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.header {
+    margin-top: 20px;
+    background-color: #330000;
+    height: 100px;
+}
+
+article {
+
+    display: flex;
+    gap: 10px;
+    height: 300px;
+}
+
+.boxes {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.row-1 {
+    display: flex;
+    gap: 20px;
+}
+
+
+.row-2 {
+    display: flex;
+    gap: 20px;
+}
+
+.social {
+    width: 199px;
+    background-color: #996666;
+    height: 281px;
+}
+
+.right {
+    width: 20%;
+}
+
+.ads {
+    margin-top: 20px;
+    background-color: #cc9999;
+    height: 540px;
+}
+
+.box {
+    background-color: #999999;
+    width: 80%;
+    height: calc(160px - 30px);
+}
+
+footer {
+    display: flex;
+    gap: 10px;
+}
+
+.footer {
+    width: 80%;
+    background-color: #330000;
+    height: 100px;
+}
+
+.tag-cloud {
+    width: 20%;
+    background-color: #660000;
+    height: 100px;
+}
+
+.tab-tag-cloud {
+    display: none;
+}
+
+
+@media (max-width: 768px) {
+    main {
+        flex-direction: column-reverse;
+    }
+
+    .ads {
+        height: 100px;
+    }
+
+    .right {
+        width: 100%;
+    }
+
+    .left {
+        width: 100%;
+    }
+
+    article {
+        flex-direction: column;
+        height: 400px;
+    }
+
+    .boxes {
+        width: 100%;
+    }
+
+    .social {
+        width: 50%;
+        height: 100px;
+    }
+
+    .tag-cloud {
+        display: none;
+    }
+
+    .footer {
+        width: 100%;
+    }
+
+    .tab-tag-cloud {
+        background-color: #cc3433;
+        display: block;
+        width: 50%;
+    }
+
+    .tab-social {
+        display: flex;
+        gap: 20px;
+        width: 100;
+    }
+
+
+}
+
+
+
+@media (max-width:600px) {
+    .row-1 {
+        flex-direction: column;
+    }
+
+    .row-2 {
+        flex-direction: column;
+    }
+
+    .box {
+        height: 50px;
+        width: 100%;
+    }
+
+    .boxes {
+        width: 100%;
+    }
+
+    .social {
+        height: 100px;
+        width: 100%;
+    }
+
+    .tab-tag-cloud {
+        display: none;
+    }
+
+    .tag-cloud {
+        display: block;
+        height: 100px;
+        width: 100%;
+
+    }
+
+    .footer {
+        height: 100px;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+}
