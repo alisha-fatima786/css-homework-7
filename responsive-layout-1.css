@@ -139,29 +139,9 @@ footer {
     display: none;
 }
 
-@media (max-width: 992px) {
-    .big-card {
-        width: 100%;
-        height: 78px;
-
-    }
-
-    .right-card {
-        width: 100%;
-        display: flex;
-        gap: 20px;
-    }
-
-    .medium-card,
-    .small-bottom-card {
-        width: 50%;
-        height: 180px;
-    }
 
 
-}
-
-@media (max-width: 576px) {
+@media (max-width: 600px) {
 
 
     .sidebar {
@@ -198,7 +178,7 @@ footer {
     }
 
 
-    #toggle-btn:checked ~ .sidebar {
+    #toggle-btn:checked~.sidebar {
         display: block;
     }
 
